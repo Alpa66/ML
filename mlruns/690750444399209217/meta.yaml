@@ -1,6 +1,0 @@
-artifact_location: file:///C:/Users/ALPHA66/Desktop/ML/mlruns/690750444399209217
-creation_time: 1670111552227
-experiment_id: '690750444399209217'
-last_update_time: 1670111552227
-lifecycle_stage: active
-name: mlflow_manual_logging
