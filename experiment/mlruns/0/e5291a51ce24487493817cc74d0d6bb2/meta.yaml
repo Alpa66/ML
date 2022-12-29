@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/ALPHA66/Desktop/ML/experiment/mlruns/0/e5291a51ce24487493817cc74d0d6bb2/artifacts
+end_time: 1670108888811
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: e5291a51ce24487493817cc74d0d6bb2
+run_name: CHILD_RUN
+run_uuid: e5291a51ce24487493817cc74d0d6bb2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1670108883191
+status: 3
+tags: []
+user_id: ALPHA66

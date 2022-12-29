@@ -1,0 +1,9 @@
+name: project
+channels:
+  - defaults
+dependencies:
+  - scikit-learn
+  - matplotlib
+  - pip
+  - pip:
+    - mlflow
