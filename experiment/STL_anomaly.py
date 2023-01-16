@@ -5,6 +5,7 @@ import datetime
 from statsmodels.tsa.seasonal import STL
 from statsmodels.tsa.seasonal import seasonal_decompose
 import sys
+import dill
 
 
 mlflow.set_experiment(experiment_name='STL')
