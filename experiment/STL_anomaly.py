@@ -8,7 +8,7 @@ import sys
 
 
 mlflow.set_experiment(experiment_name='STL')
-df = pd.read_csv(sys.argv[1], parse_dates=['timestamp'])
+df = pd.read_csv('./realTraffic/speed_t4013.csv', parse_dates=['timestamp'])
 df.index = df.timestamp
 df.drop(columns=['timestamp'], inplace=True)
 res = STL(df, seasonal=7, period=12).fit()
@@ -36,3 +36,4 @@ with mlflow.start_run(run_name="PARENT_RUN"):
                     if percentage < (1.0 / 1000.0):
                         break
 print(num)
+print('Volume is working just fine!')
