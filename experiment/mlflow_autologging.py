@@ -6,7 +6,7 @@ from sklearn import datasets
 import sys
 
 # Setting an experiment for automatic logging
-mlflow.set_experiment("auto_logging")
+# mlflow.set_experiment(experiment_name="auto_logging")
 
 # Function for automatic logging
 if __name__ == "__main__":
@@ -21,6 +21,7 @@ if __name__ == "__main__":
 
     # Instantiating LogisticRegression and GridSearchCV
     log_reg = LogisticRegression(max_iter=int(sys.argv[1]))
+    # log_reg = LogisticRegression(max_iter=int(8000))
     grid_search = GridSearchCV(log_reg, params)
 
     # Starting a logging run

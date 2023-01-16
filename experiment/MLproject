@@ -11,3 +11,7 @@ entry_points:
     parameters:
       max_iter: {type: float, default: 1000}
     command: "python mlflow_autologging.py {max_iter}"
+  STL:
+    parameters:
+      file_name: {type: string, default: './data.csv'}
+    command: "python STL_anomaly.py {file_name}"

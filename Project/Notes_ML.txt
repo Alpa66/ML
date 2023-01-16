@@ -1,0 +1,36 @@
+		Notes that needs further search:
+		* See CI/CD and tests writing
+		* 
+		
+		
+		
+		
+		Notes about the potential solutions:
+		* fbProphet:
+			+ nicely handles different seasonality parameters like monthly or yearly, has native support
+				for all time series metrics
+			+ if you look closely this algorithm can handle edge cases well as compared to the isolation forest
+			- since it is based on forecasting it will strugle in limited data scenarios.
+		* STL decomposition could be used.
+		* Some common algorithms used for time-series forecasting:
+			* ARIMA
+			* EWMA/Exponential Smoothening
+			* Dynamic Regression Models
+			* Prophet
+			* LSTM
+		* Autoencoders:
+			+ can handle high-dimensional data with ease
+			+ pertaining to its nonlinearity behavior, it can find complex patterns within high-dimensional datasets.
+			- Since it’s a deep learning-based strategy, it will particularly struggle if the data is less
+			- Computation costs will skyrocket if the depth of the network increases and while dealing with big data.
+		* Clustering Based Unsupervised Approach:
+			*  Density Based Spatial Clustering of Applications with Noise (DBSCAN)
+		* isolation forest:
+			+  you can introduce as many random variables or features as you like to make more sophisticated models.
+			- growing number of features can start to impact your computational performance fairly quickly.
+			
+			
+		Source:  https://neptune.ai/blog/anomaly-detection-in-time-series
+		
+		
+		

@@ -6,6 +6,7 @@ import sys
 
 
 if __name__ == "__main__":
+    # mlflow.set_experiment(experiment_name="manual_logging")
     # Loading data
     data = datasets.load_breast_cancer()
 
@@ -23,7 +24,8 @@ if __name__ == "__main__":
         for param_value in C:
             with mlflow.start_run(run_name="CHILD_RUN", nested=True):
                 # Instantiating and fitting the model
-                model = LogisticRegression(C=param_value, max_iter=int(sys.argv[2]))
+                model = LogisticRegression(C=param_value, max_iter=int(sys.argv[1]))
+                # model = LogisticRegression(C=param_value, max_iter=int(8000))
                 model.fit(X=X_train, y=y_train)
 
                 # Logging the current value of C
